@@ -37,6 +37,12 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9235D4BEDE444A8D82B485A9 /* libTextToSpeech.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F13E400C7F7E461385106129 /* libTextToSpeech.a */; };
+		963584938F3643058DB2DE7F /* libRNShakeEvent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8264CC0B1F054E2ABDE3ABAE /* libRNShakeEvent.a */; };
+		EE1D383B1E91B20F00C17911 /* FiraCode-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE1D383A1E91B20F00C17911 /* FiraCode-Bold.ttf */; };
+		EE1D38401E91B22200C17911 /* FiraCode-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE1D383C1E91B22200C17911 /* FiraCode-Light.ttf */; };
+		EE1D38411E91B22200C17911 /* FiraCode-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE1D383D1E91B22200C17911 /* FiraCode-Medium.ttf */; };
+		EE1D38421E91B22200C17911 /* FiraCode-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE1D383E1E91B22200C17911 /* FiraCode-Regular.ttf */; };
+		EE1D38431E91B22200C17911 /* FiraCode-Retina.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE1D383F1E91B22200C17911 /* FiraCode-Retina.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +235,13 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		EE1D38981E91D06700C17911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D77A53524824F588F0F7BBF /* RNShakeEvent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNShakeEvent;
+		};
 		EE2632431E8809C600AE61CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3246B6916BED4CFF80B1B5E7 /* TextToSpeech.xcodeproj */;
@@ -262,8 +275,15 @@
 		2D02E4901E0B4A5D006451C7 /* DublinBusAssistant-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DublinBusAssistant-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3246B6916BED4CFF80B1B5E7 /* TextToSpeech.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = TextToSpeech.xcodeproj; path = "../node_modules/react-native-tts/ios/TextToSpeech.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		6D77A53524824F588F0F7BBF /* RNShakeEvent.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNShakeEvent.xcodeproj; path = "../node_modules/react-native-shake-event/RNShakeEvent.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		8264CC0B1F054E2ABDE3ABAE /* libRNShakeEvent.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNShakeEvent.a; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		EE1D383A1E91B20F00C17911 /* FiraCode-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FiraCode-Bold.ttf"; path = "../../../Downloads/FiraCode_1.204/ttf/FiraCode-Bold.ttf"; sourceTree = "<group>"; };
+		EE1D383C1E91B22200C17911 /* FiraCode-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FiraCode-Light.ttf"; path = "../../../Downloads/FiraCode_1.204/ttf/FiraCode-Light.ttf"; sourceTree = "<group>"; };
+		EE1D383D1E91B22200C17911 /* FiraCode-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FiraCode-Medium.ttf"; path = "../../../Downloads/FiraCode_1.204/ttf/FiraCode-Medium.ttf"; sourceTree = "<group>"; };
+		EE1D383E1E91B22200C17911 /* FiraCode-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FiraCode-Regular.ttf"; path = "../../../Downloads/FiraCode_1.204/ttf/FiraCode-Regular.ttf"; sourceTree = "<group>"; };
+		EE1D383F1E91B22200C17911 /* FiraCode-Retina.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FiraCode-Retina.ttf"; path = "../../../Downloads/FiraCode_1.204/ttf/FiraCode-Retina.ttf"; sourceTree = "<group>"; };
 		F13E400C7F7E461385106129 /* libTextToSpeech.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libTextToSpeech.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -292,6 +312,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				9235D4BEDE444A8D82B485A9 /* libTextToSpeech.a in Frameworks */,
+				963584938F3643058DB2DE7F /* libRNShakeEvent.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +480,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				3246B6916BED4CFF80B1B5E7 /* TextToSpeech.xcodeproj */,
+				6D77A53524824F588F0F7BBF /* RNShakeEvent.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -475,6 +497,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				EE1D38391E91B1EE00C17911 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* DublinBusAssistant */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* DublinBusAssistantTests */,
@@ -491,6 +514,26 @@
 				00E356EE1AD99517003FC87E /* DublinBusAssistantTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* DublinBusAssistant-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* DublinBusAssistant-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE1D38391E91B1EE00C17911 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EE1D383C1E91B22200C17911 /* FiraCode-Light.ttf */,
+				EE1D383D1E91B22200C17911 /* FiraCode-Medium.ttf */,
+				EE1D383E1E91B22200C17911 /* FiraCode-Regular.ttf */,
+				EE1D383F1E91B22200C17911 /* FiraCode-Retina.ttf */,
+				EE1D383A1E91B20F00C17911 /* FiraCode-Bold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		EE1D387C1E91D06700C17911 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE1D38991E91D06700C17911 /* libRNShakeEvent.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -663,6 +706,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = EE1D387C1E91D06700C17911 /* Products */;
+					ProjectRef = 6D77A53524824F588F0F7BBF /* RNShakeEvent.xcodeproj */;
 				},
 				{
 					ProductGroup = EE2632271E8809C600AE61CD /* Products */;
@@ -855,6 +902,13 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		EE1D38991E91D06700C17911 /* libRNShakeEvent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNShakeEvent.a;
+			remoteRef = EE1D38981E91D06700C17911 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		EE2632441E8809C600AE61CD /* libTextToSpeech.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -876,6 +930,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE1D38421E91B22200C17911 /* FiraCode-Regular.ttf in Resources */,
+				EE1D383B1E91B20F00C17911 /* FiraCode-Bold.ttf in Resources */,
+				EE1D38411E91B22200C17911 /* FiraCode-Medium.ttf in Resources */,
+				EE1D38431E91B22200C17911 /* FiraCode-Retina.ttf in Resources */,
+				EE1D38401E91B22200C17911 /* FiraCode-Light.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -1004,12 +1063,16 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
+					"$(SRCROOT)/../node_modules/react-native-shake-event-ios",
+					"$(SRCROOT)/../node_modules/react-native-shake-event",
 				);
 				INFOPLIST_FILE = DublinBusAssistantTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1031,12 +1094,16 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
+					"$(SRCROOT)/../node_modules/react-native-shake-event-ios",
+					"$(SRCROOT)/../node_modules/react-native-shake-event",
 				);
 				INFOPLIST_FILE = DublinBusAssistantTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1059,9 +1126,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
+					"$(SRCROOT)/../node_modules/react-native-shake-event-ios",
+					"$(SRCROOT)/../node_modules/react-native-shake-event",
 				);
 				INFOPLIST_FILE = DublinBusAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1082,9 +1152,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
+					"$(SRCROOT)/../node_modules/react-native-shake-event-ios",
+					"$(SRCROOT)/../node_modules/react-native-shake-event",
 				);
 				INFOPLIST_FILE = DublinBusAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1112,11 +1185,15 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
+					"$(SRCROOT)/../node_modules/react-native-shake-event-ios",
+					"$(SRCROOT)/../node_modules/react-native-shake-event",
 				);
 				INFOPLIST_FILE = "DublinBusAssistant-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1147,11 +1224,15 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
+					"$(SRCROOT)/../node_modules/react-native-shake-event-ios",
+					"$(SRCROOT)/../node_modules/react-native-shake-event",
 				);
 				INFOPLIST_FILE = "DublinBusAssistant-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1183,6 +1264,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.DublinBusAssistant-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1208,6 +1291,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.DublinBusAssistant-tvOSTests";

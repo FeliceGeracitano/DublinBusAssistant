@@ -7,10 +7,15 @@
     "test": "jest"
   },
   "dependencies": {
+    "geo-lib": "^0.3.1",
+    "geolocator": "^2.1.1",
+    "path": "^0.12.7",
     "ramda": "^0.23.0",
     "react": "~15.4.1",
     "react-native": "0.42.3",
-    "react-native-tts": "^1.2.0"
+    "react-native-shake-event": "^3.0.0",
+    "react-native-tts": "^1.2.0",
+    "siriwavejs": "^2.0.2"
   },
   "devDependencies": {
     "babel-jest": "19.0.0",
