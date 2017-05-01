@@ -1,33 +1,105 @@
-import React, { Component } from 'react';
-import { AppRegistry, ListView, Text, View, StyleSheet } from 'react-native';
+import React, { Component } from 'react'
+import { ListView, Text, View, StyleSheet } from 'react-native'
+
+const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
 
 class BusList extends Component {
-  // Initialize the hardcoded data
   constructor(props) {
-    super(props);
-    const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+    super(props)
     this.state = {
-      dataSource: ds.cloneWithRows([
-        'John', 'Joel', 'James', 'Jimmy', 'Jackson', 'Jillian', 'Julie', 'Devin'
-      ])
-    };
+      dataSource: ds.cloneWithRows([])
+    }
   }
+
+  _renderSeparator(sectionID, rowID, adjacentRowHighlighted) {
+    const id = `${sectionID}-${rowID}`
+    return (
+      <View
+        key={id}
+        style={{
+          height: adjacentRowHighlighted ? 4 : 1,
+          backgroundColor: adjacentRowHighlighted ? '#3B5998' : '#CCCCCC'
+        }}
+      />
+    )
+  }
+
+  _renderRow(rowData) {
+    const length = rowData.destination.length
+    const newDirection = rowData.destination
+      .slice(0, 16)
+      .concat(length > 16 ? '...' : '')
+    return (
+      <View style={styles.row}>
+        <View>
+          <Text style={styles.text}>
+            {rowData.route}
+          </Text>
+          <Text style={styles.direction}>
+            {newDirection}
+          </Text>
+        </View>
+
+        <Text style={styles.text}>
+          {rowData.duetime}
+        </Text>
+      </View>
+    )
+  }
+
+  _updateListView(buses) {
+    if (!buses) {
+      return
+    }
+    this.setState({
+      dataSource: ds.cloneWithRows(buses)
+    })
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this._updateListView(nextProps.buses)
+  }
+
   render() {
     return (
-      <View style={styles.busList}>
+      <View style={styles.busListContainer}>
         <ListView
+          style={{ backgroundColor: 'black' }}
+          scrollEnabled={false}
           dataSource={this.state.dataSource}
-          renderRow={(rowData) => <Text>{rowData}</Text>}
+          renderRow={this._renderRow}
+          renderSeparator={this._renderSeparator}
         />
       </View>
-    );
+    )
   }
 }
 
-
 const styles = StyleSheet.create({
-  busList: {
-    flex: 1, paddingTop: 22, backgroundColor:'white'
+  busListContainer: {
+    flex: 1,
+    paddingTop: 22,
+    backgroundColor: 'black',
+    paddingLeft: 20,
+    paddingRight: 20,
+    paddingBottom: 20
+  },
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 10
+  },
+  text: {
+    fontFamily: 'Fira Code',
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: '#FFCD00'
+  },
+  direction: {
+    fontFamily: 'Fira Code',
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#FFCD00'
   }
-});
-module.exports = BusList;
+})
+module.exports = BusList

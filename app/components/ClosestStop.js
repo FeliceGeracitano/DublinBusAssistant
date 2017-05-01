@@ -1,15 +1,8 @@
-import React, { Component } from 'react';
-import { StyleSheet, View, Image, Text } from 'react-native';
-
+import React, { Component } from 'react'
+import { StyleSheet, View, Image, Text } from 'react-native'
 
 class ClosestStop extends Component {
-
-  constructor(props) {
-    super(props)
-  }
-
-
-  render() {
+  render () {
     return (
       <View style={[styles.closestStop, this.props.style || {}]}>
         <Image source={require('../img/pin.png')} style={styles.pin} />
@@ -18,14 +11,15 @@ class ClosestStop extends Component {
           <Text style={styles.stopName}>{this.props.stopName}</Text>
         </View>
       </View>
-    );
+    )
   }
 }
 
 const styles = StyleSheet.create({
   closestStop: {
     flexDirection: 'row',
-    padding: 15,
+    paddingTop: 30,
+    paddingBottom: 15,
     paddingLeft: 40,
     paddingRight: 40
   },
@@ -34,7 +28,7 @@ const styles = StyleSheet.create({
     height: 164
   },
   labelContainer: {
-    marginLeft: 15,
+    paddingLeft: 15,
     paddingTop: 10,
     justifyContent: 'flex-start'
   },
@@ -49,6 +43,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#FFCD00'
   }
-});
+})
 
-module.exports = ClosestStop;
+module.exports = ClosestStop

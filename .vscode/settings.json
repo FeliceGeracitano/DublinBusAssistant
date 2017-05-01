@@ -1,0 +1,24 @@
+{
+  "eslint.enable": false,
+  "standard.enable": false,
+  "editor.formatOnSave": true,
+  "prettier.semi": false,
+  "prettier.bracketSpacing": true,
+  // Indent lines with tabs
+  "prettier.useTabs": false,
+
+  // Fit code within this line limit
+  "prettier.printWidth": 80,
+
+  // Number of spaces it should use per tab
+  "prettier.tabWidth": 2,
+
+  // If true, will use single instead of double quotes
+  "prettier.singleQuote": true,
+
+  // Controls the printing of trailing commas wherever possible. Valid options:
+  // "none" - No trailing commas
+  // "es5"  - Trailing commas where valid in ES5 (objects, arrays, etc)
+  // "all"  - Trailing commas wherever possible (function arguments)
+  "prettier.trailingComma": "none"
+}
