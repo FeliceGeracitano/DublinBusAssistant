@@ -40,7 +40,7 @@ class BusList extends Component {
           </Text>
         </View>
 
-        <Text style={styles.text}>
+        <Text style={styles.dueTime}>
           {rowData.duetime}
         </Text>
       </View>
@@ -92,6 +92,12 @@ const styles = StyleSheet.create({
   text: {
     fontFamily: 'Fira Code',
     fontSize: 30,
+    fontWeight: 'bold',
+    color: '#FFCD00'
+  },
+  dueTime: {
+    fontFamily: 'Fira Code',
+    fontSize: 24,
     fontWeight: 'bold',
     color: '#FFCD00'
   },

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { StyleSheet, View, Image, Text } from 'react-native'
 
 class ClosestStop extends Component {
-  render () {
+  render() {
     return (
       <View style={[styles.closestStop, this.props.style || {}]}>
         <Image source={require('../img/pin.png')} style={styles.pin} />
@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
     paddingRight: 40
   },
   pin: {
-    width: 90,
-    height: 164
+    width: 92,
+    height: 166
   },
   labelContainer: {
     paddingLeft: 15,

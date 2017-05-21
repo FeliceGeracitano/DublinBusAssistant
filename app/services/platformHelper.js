@@ -1,5 +1,5 @@
 import R from 'ramda'
-import { PermissionsAndroid, Platform } from 'react-native'
+import { PermissionsAndroid, Platform, UIManager } from 'react-native'
 
 const isAndroid = Platform.OS === 'android'
 

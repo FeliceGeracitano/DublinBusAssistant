@@ -1,13 +1,5 @@
 import React, { Component } from 'react'
-import {
-  WebView,
-  StatusBar,
-  StyleSheet,
-  View,
-  LayoutAnimation,
-  Platform,
-  UIManager
-} from 'react-native'
+import { WebView, StyleSheet, View, LayoutAnimation } from 'react-native'
 import ViewContainer from './ViewContainer'
 import StatusBarBackground from './StatusBarBackground'
 import ClosestStop from './ClosestStop'
@@ -134,7 +126,7 @@ export default class App extends Component {
     let content = this.determinateContent(this.state.showLoader)
     return (
       <ViewContainer style={styles.flexContainer}>
-        <StatusBar backgroundColor="#FFCD00" barStyle={'dark-content'} />
+        <StatusBarBackground />
         {content}
       </ViewContainer>
     )

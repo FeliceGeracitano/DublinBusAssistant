@@ -1,17 +1,25 @@
 import React, { Component } from 'react'
-import { StyleSheet, View } from 'react-native'
+import { StyleSheet, View, Platform, StatusBar } from 'react-native'
+import CONSTANTS from '../data/constants'
 
 class StatusBarBackground extends Component {
-  render () {
+  render() {
+    const isIOS = Platform.OS !== 'android'
     return (
-      <View style={[styles.statusBarBackground, this.props.style || {}]} />
+      <View>
+        <StatusBar
+          backgroundColor={CONSTANTS.yellow}
+          barStyle={'dark-content'}
+        />
+        {isIOS ? <View style={styles.statusBarBackground} /> : null}
+      </View>
     )
   }
 }
 
 const styles = StyleSheet.create({
   statusBarBackground: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: CONSTANTS.yellow,
     height: 20
   }
 })
